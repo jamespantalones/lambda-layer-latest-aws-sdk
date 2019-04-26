@@ -12,9 +12,15 @@ Hence this Lambda Layer. Using `AWS-SDK 2.443.0`
 
 ## How to use
 
-The easiest way would be to simply include `arn:aws:lambda:us-east-1:510875216808:layer:latestAWSSDKLayer:1` in your lambda function
+The easiest way would be to simply include
+
+`arn:aws:lambda:us-east-1:510875216808:layer:latestAWSSDKLayer:1`
+
+in your lambda function
 
 If you want to host yourself on your own Lambda Layers, simply upload the `nodejs.zip` file to a new Lambda Layer and add it in each function you want to use.
+
+There is only one dependency – AWS-SDK.
 
 ## To Maybe Do Soon:
 
