@@ -4,7 +4,7 @@ Use the latest AWS-SDK in your Lambda functions with no need to package up in `n
 
 ## Backstory
 
-Had an issue the other day where I wanted to use `apigatewaymanagementapi` from `AWS-SDK` node library. The specific API was introduced in a fairly recent (few months old) `AWS-SDK` release, but wasn’t available on Lambda, which is currenty packaged with `AWS-SDK 2.290.0` in the runtime.
+Had an issue the other day where I wanted to use `apigatewaymanagementapi` from `AWS-SDK` node library. The specific API was introduced in a fairly recent (few months old) `AWS-SDK` release, but wasn’t available on Lambda, which is [currenty packaged with `AWS-SDK 2.290.0` in the runtime](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html).
 
 I therefore needed to bundle a different version of `AWS-SDK` in my `node_modules`, zip it up, and deploy to Lambda every time I wanted to update the function. This got tiresome.
 
